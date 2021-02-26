@@ -1,0 +1,57 @@
+body {
+}
+
+h1 {
+    color: blue;
+}
+
+.jumbotron {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
+    /* border: 1px solid rgb(0,0,0,0.3); */
+    box-shadow: 2px -2px 5px rgb(0,0,0,0.5);
+}
+
+progress {
+    width: 100%;
+    height: 60px;
+    display: none;
+}
+
+span#progress {
+    position: relative;
+    top: -45px;
+    left: 49%;
+    font-weight: bold;
+    display: none;
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+button span.material-icons {
+    position: relative;
+    top: 1px;
+}
+
+button span {
+    position: relative;
+    top: -5px;
+}
+
+input.editar {
+    box-shadow: 2px 2px 2px gold;
+}
+
+input.ingresar {
+    box-shadow: 1px 1px 1px green;
+}
+
+input.info {
+    box-shadow: 1px 1px 1px gray;
+}

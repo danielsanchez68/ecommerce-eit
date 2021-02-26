@@ -1,0 +1,32 @@
+<div id="contenedor-lista">
+
+    {{#if listaProductos.length}}
+        <div class="my-2 form-inline" autocomplete="off" >
+            <input class="mr-2 form-control bg-dark text-white info" disabled value="NOMBRE">
+            <input class="mr-2 form-control bg-dark text-white info" disabled value="CANTIDAD">
+            <input class="mr-2 form-control bg-dark text-white info" disabled value="PRECIO">
+        </div>
+    {{else}}
+        <h3 class="alert alert-danger">No hay productos</h3>
+    {{/if}}
+
+
+    {{#listaProductos}}
+    <div class="my-2 form-inline" autocomplete="off" >
+        <!-- Campo de descripción del producto -->
+        <input class="mr-2 form-control info" disabled value="{{nombre}}">
+
+        <!-- Campo de entrada de cantidad del producto -->
+        <input class="form-control mr-2 editar" onchange="cambiarCantidad('{{_id}}',this)" value="{{cantidad}}" class="mdl-textfield__input" type="text" id="sample-cantidad-{{@index}}">
+
+        <!-- Campo de entrada de precio del producto -->
+        <input class="form-control mr-3 editar" onchange="cambiarPrecio('{{_id}}',this)" value="{{precio}}" class="mdl-textfield__input" type="text" id="sample-precio-{{@index}}">
+
+        <!-- Botón para eliminar el producto -->
+        <button onclick="borrarProd('{{_id}}')" class="btn btn-danger">
+            <span>Borrar</span> <span class="material-icons">remove_shopping_cart</span>
+        </button>
+    </div>
+    {{/listaProductos}}
+
+</div>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="js/handlebars.min-v4.7.6.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container mt-3">
+
+        <div class="jumbotron">
+
+            <h1>Carrito de Compras</h1>
+            <br>
+
+            <!-- ---------------------------------------- -->
+            <!--                  menú                    -->
+            <!-- ---------------------------------------- -->
+            <div class="form-inline mt-3 mb-5">
+                <label class="mr-2" for="ingreso-producto"><h4>Ingrese producto</h4></label>
+                <input class="form-control mr-3 ingresar" type="text" id="ingreso-producto" autocomplete="off">
+
+                <button id="btn-entrada-producto" class="btn btn-success mr-4">
+                    <span>Agregar</span> <span class="material-icons">add_shopping_cart</span>
+                </button>
+
+                <!-- Colored raised button -->
+                <button id="btn-borrar-productos" class="btn btn-danger">
+                    <span>Borrar Todo</span> <span class="material-icons">delete</span>
+                </button>
+            </div>
+
+            <!-- ---------------------------------------- -->
+            <!--        progreso de borrado total         -->
+            <!-- ---------------------------------------- -->
+            <progress min="0" max="100" value="0"></progress> <span id="progress"></span>
+
+            <!-- ---------------------------------------- -->
+            <!--            Lista de productos            -->
+            <!-- ---------------------------------------- -->
+            <div id="lista"></div>
+        </div>
+    </div>
+</body>
+
+</html>
